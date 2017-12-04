@@ -1,0 +1,31 @@
+{
+  "name": "rest-api-node-js",
+  "version": "1.0.0",
+  "description": "REST Api ",
+  "main": "server.js",
+  "author": "necheporenko",
+  "license": "ISC",
+  "keywords": [
+    "node",
+    "mongo",
+    "rest",
+    "api"
+  ],
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.12.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js --exec babel-node",
+    "build": "babel src -d dist"
+  }
+}
