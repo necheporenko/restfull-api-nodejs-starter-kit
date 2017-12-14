@@ -1,6 +1,11 @@
-import mongoose, { Error } from 'mongoose';  
+import mongoose from 'mongoose';
+import Promise from 'bluebird';
 import app  from './app';
-import {PORT, MONGODB_URL} from './config';
+import { PORT, MONGODB_URL } from './config';
+
+
+/** plugin bluebird promise in mongoose */
+mongoose.Promise = Promise;
 
 /**
  * Connection to db
@@ -10,6 +15,6 @@ mongoose.connection.once('open', () => console.log('[*] MongoDB: Connection succ
 mongoose.connection.on('error', () => { throw new Error('[*] MongoDB: Unable to connect') });
 
 
-const server = app.listen(PORT, function() {
+app.listen(PORT, function() {
     console.log(`Server listening on port ${PORT}`);
-})
+});
