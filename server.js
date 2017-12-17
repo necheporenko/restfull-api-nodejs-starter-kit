@@ -1,5 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 import mongoose from 'mongoose';
 import Promise from 'bluebird';
 import morgan from 'morgan';
@@ -12,6 +13,9 @@ const app = express();
 
 app.use(bodyParser.urlencoded ({ extended: true }));
 app.use(bodyParser.json());
+
+// Allow requests from any origin
+app.use(cors({ origin: '*' }));
 
 // log to console
 app.use(morgan('dev'));

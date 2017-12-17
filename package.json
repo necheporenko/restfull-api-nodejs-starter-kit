@@ -1,20 +1,27 @@
 {
-  "name": "rest-api-node-js",
+  "name": "restfull-api-nodejs-starter-kit",
   "version": "1.0.0",
-  "description": "REST Api ",
+  "description": "RESTfull Api Node.js",
   "main": "server.js",
-  "author": "necheporenko",
+  "author": {
+    "name": "necheporenko",
+    "url": "https://github.com/necheporenko"
+  },
   "license": "ISC",
   "keywords": [
     "node",
+    "express",
     "mongo",
     "rest",
-    "api"
+    "api",
+    "jwt",
+    "passport"
   ],
   "dependencies": {
     "bcrypt": "^1.0.3",
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
     "express": "^4.16.2",
     "jwt-simple": "^0.5.1",
     "mongoose": "^4.13.6",
