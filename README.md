@@ -29,8 +29,8 @@ yarn run dev
 Default configuration
 ```js
 // server/config/config.js
-export const PORT = process.env.PORT || <PUT_YOUR_PORT_HERE>;;
-export const MONGODB_URL = process.env.MONGODB_URL || <PUT_YOUR_MONGODB_URL_HERE>;;
+export const PORT = process.env.PORT || <PUT_YOUR_PORT_HERE>;
+export const MONGODB_URL = process.env.MONGODB_URL || <PUT_YOUR_MONGODB_URL_HERE>;
 export const SECRET = process.env.SECRET || <PUT_YOUR_SECRET_HERE>;
 ```
 
