@@ -29,7 +29,7 @@ mongoose.Promise = Promise;
 /**
  * Connection to db
  */
-mongoose.connect(MONGODB_URL, { useMongoClient: true });
+mongoose.connect(MONGODB_URL, { useNewUrlParser: true });
 mongoose.connection.once('open', () => console.log('[*] MongoDB: Connection succeeded'));
 mongoose.connection.on('error', () => { throw new Error('[*] MongoDB: Unable to connect') });
 
