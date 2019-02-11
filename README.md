@@ -34,6 +34,7 @@ yarn run dev
 Default configuration
 
 ```js
+// Please note, doesn't store your credentials in open access
 // .env
 PORT = <PUT_YOUR_PORT_HERE>;
 MONGODB_URL = <PUT_YOUR_MONGODB_URL_HERE>;
@@ -50,6 +51,7 @@ SECRET = <PUT_YOUR_SECRET_HERE>;
 │   ├── models
 │   └── routes
 ├── .babelrc
+├── .env
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
