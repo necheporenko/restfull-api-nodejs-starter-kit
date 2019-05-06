@@ -1,2 +1,28 @@
+#Build
+dist
+
+#Dev
+dev
+
+# Dependency directories
 node_modules
+
+# IDE & Editors
 .idea
+.vscode
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Mac files
+.DS_Store
+
+# Yarn
+yarn.lock
+yarn-error.log
+
+# NPM
+package-lock.json
